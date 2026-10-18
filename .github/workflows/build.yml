@@ -108,6 +108,8 @@ jobs:
     timeout-minutes: 120
     env:
       UPLOAD_ARTIFACT_ACTION: ${{ github.server_url == 'https://git.miguvt.com' && 'actions/upload-artifact@v3' || 'actions/upload-artifact@v4' }}
+      KBUILD_BUILD_USER: demoneisonRSKSU
+      KBUILD_BUILD_HOST: demoneisonRSKSU
       KERNEL_DIR: kernel
       ANYKERNEL_DIR: AnyKernel3
       DEFCONFIG: ${{ inputs.kernel_defconfig }}
